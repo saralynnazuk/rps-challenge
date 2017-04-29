@@ -4,7 +4,12 @@ class RPS < Sinatra::Base
   enable :sessions
 
   get '/' do
-    'Testing infrasturcture working!'
+    erb :index
+  end
+
+  post '/name' do
+    @name = params[:name]
+    erb :play
   end
 
   run! if app_file == $0
