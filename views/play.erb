@@ -1,1 +1,11 @@
-Welcome, <%= @name.capitalize %>!
+<h2>Welcome, <%= @name.capitalize %>!</h2>
+
+<!-- the marketeer will be presented the choices (rock, paper and scissors) -->
+
+<h3>Choose what you'd like to throw:</h3>
+
+<form action="/choose" method="post">
+  <input type="submit" value="ROCK">
+  <input type="submit" value="PAPER">
+  <input type="submit" value="SCISSORS">
+</form>
