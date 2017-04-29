@@ -17,5 +17,9 @@ class RPS < Sinatra::Base
     erb :play
   end
 
+  get '/throw' do
+    erb :throw
+  end
+
   run! if app_file == $0
 end

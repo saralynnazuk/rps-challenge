@@ -1,8 +1,8 @@
 require 'spec_helper'
 require './app'
 
-feature 'Choose what ammo to throw' do
-  scenario 'pick rock, paper, or scissors' do
+feature 'Show player the ammo options' do
+  scenario 'choose from rock, paper, or scissors' do
     sign_in_and_play
     find_button('ROCK').click
   end
